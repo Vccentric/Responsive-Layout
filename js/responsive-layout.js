@@ -30,7 +30,6 @@ const addItem = (event) => {
     // fake API call - testing
     setTimeout((elm) => {
         try {
-            test();
             updateButton(elm, false); // reset button
             showTooltip(elm, { 'cid': '123', 'name': 'testing' }); // display tooltip
         } catch (e) {
