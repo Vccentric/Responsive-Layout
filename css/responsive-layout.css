@@ -1,0 +1,379 @@
+/**
+ * Responsive Layout v1.0.0
+ * This is the CSS file for the 'Responsive Layout' project.
+ *
+ * @author      Christopher Viray
+ * @copyright   (c) 2018 Christopher Viray
+ * @license     MIT
+ * @version     1.0.0
+ */
+
+/* ============= General CSS ============= */
+
+.hidden {
+    display: none !important;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 16px;
+    color: #000;
+    font-family: 'MarkWeb';
+    min-width: 300px;
+    z-index: 1;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 0.2em;
+}
+
+.button {
+    border: 1px solid #000;
+    width: 140px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover, .button.active {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ============= Header Bar ============= */
+
+#header-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 35px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#header-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    background-image: url('../assets/logo_desktop_1x.png');
+    background-repeat: no-repeat;
+    width: 158px;
+    height: 20px;
+    margin: 5px 20px;
+}
+
+a.brand {
+    line-height: 21px;
+    padding: 5px 20px;
+    border-left: 1px solid #808080;
+    font-weight: normal;
+}
+
+/* ============= Headline ============= */
+
+#headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/hero_desktop_1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+.headline-title {
+    background-color: white;
+    color: #f0725d;
+    font-family: 'CanelaWeb';
+    font-size: 72px;
+    padding: 10px 40px;
+    font-weight: normal;
+}
+
+/* ============= Content ============= */
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px 80px;
+    margin-bottom: 40px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-title {
+    font-size: 48px;
+    font-family: 'CanelaWeb';
+}
+
+.post-description {
+    width: 60%;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product-image {
+    flex: 1.5;
+    width: 100%;
+    min-width: 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product.left .product-image {
+    order: 1;
+}
+
+.product.left .product-info {
+    order: 2;
+    margin-left: 20px;
+}
+
+.product.right .product-image {
+    order: 2;
+}
+
+.product.right .product-info {
+    order: 1;
+    margin-right: 20px;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.product-short-description {
+    color: #808080;
+}
+
+.product-weight {
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sections-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.section {
+    flex: 1;
+    border-right: 1px solid #f0725d;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.section:last-child {
+    border-right: 0 none;
+    margin-right: 0;
+}
+
+.section-title {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.section a {
+    color: #808080;
+    text-decoration: none;
+}
+
+/* ============= Tooltip ============= */
+
+.tooltip {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #808080;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    z-index: 10;
+    min-width: 140px;
+}
+
+.tooltip:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #808080 transparent transparent;
+    top: 5px;
+    left: -21px;
+}
+
+.tooltip:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    top: 5px;
+    left: -20px;
+}
+
+.tooltip.right:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #808080;
+    top: 5px;
+    left: 161px;
+}
+
+.tooltip.right:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    top: 5px;
+    left: 160px;
+}
+
+.tooltip-title {
+    color: #808080;
+}
+
+.tooltip-product-name {
+    margin-top: 10px;
+}
+
+.tooltip-product-variant {
+    margin-bottom: 10px;
+}
+
+.tooltip .button {
+    width: 100%;
+    text-decoration: none;
+}
+
+/* ============= Mobile ============= */
+
+@media only screen and (max-width: 979px) {
+    #page-container {
+        font-size: 15px;
+    }
+    .touch .button:hover {
+        background-color: #000;
+        color: #fff;
+    }
+    .touch .button.active {
+        background-color: #fff;
+        color: #000;
+    }
+    .logo {
+        background-image: url('../assets/logo_mobile_1x.png');
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 20px;
+        margin: 5px 10px;
+    }
+    #headline {
+        align-items: flex-start;
+        background-image: url('../assets/hero_mobile_1x.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+    }
+    .headline-title {
+        font-size: 44px;
+        padding: 10px;
+        margin: 60px 20px 20px;
+    }
+    .post-title {
+        font-size: 30px;
+    }
+    .post-description {
+        width: auto;
+    }
+    .brand {
+        font-size: 18px;
+    }
+    a.brand {
+        line-height: 18px;
+    }
+    #content-container {
+        padding: 18px;
+        margin-bottom: 20px;
+    }
+    .post {
+        margin-bottom: 20px;
+    }
+    .product {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .product-image, .product.left .product-image, .product.right .product-image {
+        flex: 1;
+        order: 0;
+    }
+    .product-info, .product.left .product-info, .product.right .product-info {
+        flex: 1;
+        order: 0;
+        margin: 0;
+    }
+    .product-title {
+        font-size: 21px;
+    }
+    .sections-container {
+        flex-direction: column;
+        margin: 0;
+    }
+    .section {
+        padding: 0;
+        border: none;
+        margin: 0;
+    }
+    .section-title {
+        font-size: 18px;
+    }
+    .general .post-title {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #f0725d;
+        margin-bottom: 20px;
+    }
+}

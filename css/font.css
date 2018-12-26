@@ -1,0 +1,33 @@
+/* Sans-Serif Regular */
+@font-face {
+  font-family: 'MarkWeb';
+  src: url('//d2k21z21l53iby.cloudfront.net/webfont3/MarkWeb.eot');
+  src: url('//d2k21z21l53iby.cloudfront.net/webfont3/MarkWeb.eot?#iefix') format('embedded-opentype'),
+       url('//d2k21z21l53iby.cloudfront.net/webfont3/MarkWeb.woff') format('woff'),
+       url('//d2k21z21l53iby.cloudfront.net/webfont3/MarkWeb.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Sans-Serif Bold */
+@font-face {
+  font-family: 'MarkWeb';
+  src: url('//d2k21z21l53iby.cloudfront.net/webfont3/MarkWebBold.eot');
+  src: url('//d2k21z21l53iby.cloudfront.net/webfont3/MarkWebBold.eot?#iefix') format('embedded-opentype'),
+       url('//d2k21z21l53iby.cloudfront.net/webfont3/MarkWebBold.woff') format('woff'),
+       url('//d2k21z21l53iby.cloudfront.net/webfont3/MarkWebBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Serif Regular */
+@font-face {
+    font-family: 'CanelaWeb';
+    src: url('//d2k21z21l53iby.cloudfront.net/webfont3/Canela-Medium-Web.eot');
+    src: url('//d2k21z21l53iby.cloudfront.net/webfont3/Canela-Medium-Web.eot?#iefix') format('embedded-opentype'),
+         url('//d2k21z21l53iby.cloudfront.net/webfont3/Canela-Medium-Web.woff2') format('woff2'),
+         url('//d2k21z21l53iby.cloudfront.net/webfont3/Canela-Medium-Web.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}

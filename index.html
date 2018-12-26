@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Responsive Layout Demo</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive-layout.css">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="header-bar">
+            <a class="logo" href="https://www.beautylish.com/"></a>
+            <a class="brand" href="https://www.beautylish.com/b/by-terry">BY TERRY</a>
+        </div>
+        <div id="headline">
+            <h1 class="headline-title">Tropical Sunset Collection</h1>
+        </div>
+        <div id="content-container">
+            <div class="brand">BY TERRY</div>
+            <div class="post">
+                <div class="post-title">Limited Edition Sun Designer Palette</div>
+                <p class="post-description">Design a sun-kissed summer glow—no matter your skin tone—with
+                    skin-enhancing shades of blush, bronzer, and highlighter. Decadently silky with satin and matte
+                    finishes, these blendable powders make it easy to sculpt your contours, brighten your features,
+                    and create a healthy, natural tan. You may not be able to take a tropical vacation—but you can
+                    look like you did.</p>
+                <div class="product left">
+                    <img class="product-image" srcset="./assets/tropical_sunset_1x.jpg 790w, ./assets/tropical_sunset_2x.jpg 1580w"
+                        sizes="(max-width:1500px) 780px, 1500px" src="./assets/tropical_sunset_1x.jpg" alt="Tropical Sunset" />
+                    <div class="product-info">
+                        <div class="product-title">Tropical Sunset</div>
+                        <div class="product-short-description">Rich, warm hues for a sultry golden glow.</div>
+                        <p class="product-description">Tropical Sunset features six rich, warm-toned shades for a
+                            sultry golden glow. It includes coral peach, warm gold, vibrant fuchsia, satin peachy
+                            tan, soft pale rose, and deep rose gold.</p>
+                        <div class="product-weight">15 g / 0.53 oz</div>
+                        <div class="product-price">$82</div>
+                        <button type="button" class="button add-bag" data-cid="gzqva">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="product right">
+                    <img class="product-image" srcset="./assets/savannah_love_1x.jpg 790w, ./assets/savannah_love_2x.jpg 1580w"
+                        sizes="(max-width:1500px) 780px, 1500px" src="./assets/savannah_love_1x.jpg" alt="Savannah Love" />
+                    <div class="product-info">
+                        <div class="product-title">Savannah Love</div>
+                        <div class="product-short-description">Luminous pinks, peaches, and a deep, bronzy brown.</div>
+                        <p class="product-description">Savannah Love features six shades that can be used to
+                            sculpt, bronze, and highlight. It includes soft baby pink, warm gold, vibrant berry,
+                            creamy beige, warm peach, and deep bronze brown.</p>
+                        <div class="product-weight">15 g / 0.53 oz</div>
+                        <div class="product-price">$82</div>
+                        <button type="button" class="button add-bag" data-cid="gzqvg">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+            <div class="post general">
+                <div class="post-title">The Beautylish Guarantee</div>
+                <div class="sections-container">
+                    <div class="section">
+                        <div class="section-title">Fast & Free Shipping</div>
+                        <p class="section-description">Orders over $35 ship for free in the U.S.. For all other
+                            orders, we offer $5 flat rate shipping.</p>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">Satisfaction Guaranteed</div>
+                        <p class="section-description">We want you to love what you order. With our money-back
+                            guarantee, you can return your order within 90 days for a full refund. We'll even cover
+                            the cost of return shipping.</p>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">World-Class Customer Care</div>
+                        <p class="section-description">Our in-house beauty experts are available to assist you
+                            seven days a week. Feel free to contact us with any questions:</p>
+                        <label>Phone: </label><a href="tel:+18779925474">1-877-992-5474</a>
+                        <br />
+                        <label>Email: </label><a href="mailto:service@beautylish.com">service@beautylish.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tooltip hidden">
+                <div class="tooltip-title">ADDED</div>
+                <span class="tooltip-product-name">Sun Designer Platte</span>
+                <span class="tooltip-product-variant">3 - Tropical Sunset</span>
+                <button type="button" class="button view-bag" data-cid="">View Bag &#x25BA;</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/responsive-layout.js"></script>
+</body>
+
+</html>

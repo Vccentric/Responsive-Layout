@@ -1,0 +1,60 @@
+{
+    "brand": {
+        "id": "180",
+        "cid": "vmruv",
+        "name": "BY TERRY",
+        "url": "/b/by-terry"
+    },
+
+    "product": {
+        "id": "33417",
+        "cid": "ixaps",
+        "id_string": "sun-designer-palette",
+        "name": "Sun Designer Palette",
+        "description": "Design a sun-kissed summer glow—no matter your skin tone—with skin-enhancing shades of blush, bronzer, and highlighter. Decadently silky with satin and matte finishes, these blendable powders make it easy to sculpt your contours, brighten your features, and create a healthy, natural tan. You may not be able to take a tropical vacation—but you can look like you did."
+    },
+
+    "variants": [
+        {"id": "54894",
+         "cid": "gzqva",
+         "id_string": "tropical-sunset",
+         "name": "3 - Tropical Sunset ",
+         "callout_badge": "Limited Edition",
+         "short_description": "Rich, warm hues for a sultry golden glow.",
+         "description": "Tropical Sunset features six rich, warm-toned shades for a sultry golden glow. It includes coral peach, warm gold, vibrant fuchsia, satin peachy tan, soft pale rose, and deep rose gold.",
+         "size": "15 g / 0.53 oz",
+         "price": "$82"
+        },
+        {"id": "54895",
+         "cid": "gzqvg",
+         "id_string": "savannah-love",
+         "name": "4 - Savannah Love",
+         "callout_badge": "Limited Edition",
+         "short_description": "Luminous pinks, peaches, and a deep, bronzy brown.",
+         "description": "Savannah Love features six shades that can be used to sculpt, bronze, and highlight. It includes soft baby pink, warm gold, vibrant berry, creamy beige, warm peach, and deep bronze brown.",
+         "size": "15 g / 0.53 oz",
+         "price": "$82"
+        }
+    ],
+
+    "general" : {
+        "headline": "The Beautylish Guarantee",
+        "subhead_1": "Fast & Free Shipping",
+        "copy_1": "Orders over $35 ship for free in the U.S.. For all other orders, we offer $5 flat rate shipping.",
+        "subhead_2": "Satisfaction Guaranteed",
+        "copy_2": "We want you to love what you order. With our money-back guarantee, you can return your order within 90 days for a full refund. We'll even cover the cost of return shipping.",
+        "subhead_3": "World-Class Customer Care",
+        "copy_3": "Our in-house beauty experts are available to assist you seven days a week. Feel free to contact us with any questions:"
+    },
+
+    "contacts": [
+        {"label": "Phone:",
+         "href": "tel:+18779925474",
+         "msg": "1-877-992-5474"
+        },
+        {"label": "Email:",
+         "href": "mailto:service@beautylish.com",
+         "msg": "service@beautylish.com"
+        }
+    ]
+}
