@@ -376,4 +376,8 @@ a.brand {
         border-bottom: 1px solid #f0725d;
         margin-bottom: 20px;
     }
+    .tooltip {
+        min-width: 120px;
+        padding: 8px;
+    }
 }

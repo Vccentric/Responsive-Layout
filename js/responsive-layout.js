@@ -27,19 +27,7 @@ const addItem = (event) => {
         headers: { 'Content-Type': 'application/json' }
     };
 
-    // fake API call - testing
-    setTimeout((elm) => {
-        try {
-            updateButton(elm, false); // reset button
-            showTooltip(elm, { 'cid': '123', 'name': 'testing' }); // display tooltip
-        } catch (e) {
-            updateButton(elm, false); // reset button
-            console.log(e);
-        }
-    }, 3000, button);
-
     // make API call
-    /*
     fetch(url, opts)
         .then((response) => response.json())
         .then((data) => {
@@ -52,7 +40,6 @@ const addItem = (event) => {
             updateButton(button, false); // reset button
             console.log(error);
         });
-        */
 };
 
 // function to show and display the tooltip
